@@ -1,0 +1,213 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e2f;
+    color: #f5f5f5;
+}
+
+.menu {
+    width: 250px;
+    background-color: #29293d;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    color: #f5f5f5;
+}
+
+.menu h2 {
+    color: #4caf50;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu ul li:hover {
+    background-color: #444;
+}
+
+.menu ul li .list-name {
+    flex: 1;
+    color: #f5f5f5;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu ul li .button-container {
+    display: flex;
+    gap: 12px; 
+}
+
+.menu button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu button:hover {
+    background-color: #388e3c;
+}
+
+.menu ul li .edit-btn,
+.menu ul li .delete-btn {
+    padding: 4px 8px; 
+    font-size: 12px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;  
+}
+
+.menu ul li .edit-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.menu ul li .edit-btn:hover {
+    background-color: #388e3c;
+}
+
+.menu ul li .delete-btn {
+    background-color: #e53935;
+    color: white;
+}
+
+.menu ul li .delete-btn:hover {
+    background-color: #c62828;
+}
+
+/* Lista de tareas */
+.container {
+    width: 90%; 
+    max-width: 650px; 
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #29293d;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: #4caf50;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task-input input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #444;
+    background-color: #333;
+    color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.task-input input[type="text"]::placeholder {
+    color: #888;
+}
+
+.task-input button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-input button:hover {
+    background-color: #388e3c;
+}
+
+/* Lista de tareas */
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    gap: 10px; 
+}
+
+.task-list li .task-text {
+    flex: 1; 
+    text-align: left;
+    word-wrap: break-word; 
+}
+
+.task-list li .task-category {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #888;
+}
+
+.task-list li .button-container {
+    display: flex;
+    gap: 5px; 
+}
+
+.task-list li .edit-btn,
+.task-list li .delete-btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-list li .edit-btn:hover {
+    background-color: #388e3c;
+}
+
+.task-list li .delete-btn {
+    background-color: #e53935;
+}
+
+.task-list li .delete-btn:hover {
+    background-color: #c62828;
+}
+
+/* Tarea completada (tachada) */
+.task-list li.completed .task-text {
+    text-decoration: line-through;
+    color: #888;
+}
